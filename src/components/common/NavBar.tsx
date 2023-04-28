@@ -1,6 +1,7 @@
 import React from "react";
 import { Menu } from "semantic-ui-react";
 import {logo} from "../../constants/constant"
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -8,8 +9,8 @@ const NavBar = () => {
       <Menu.Item>
         <img src={logo} alt="logo"  style={{width: "150px"}}/>
       </Menu.Item>
-      <Menu.Item name="home" />
-      <Menu.Item name="recipes" />
+      <Menu.Item name="home" as={Link} to="/"/>
+      <Menu.Item name="recipes" as={Link} to="/recipes"/>
     </Menu>
   );
 };
