@@ -1,11 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import NavBar from "./components/common/NavBar";
+import Home from "./pages/Home";
+import "./App.css";
 
-function App() {
+const App = ()=> {
   return (
-    <div className="App">
- 
-    </div>
+    <>
+      <NavBar />
+      <Home />
+    </>
   );
 }
 
