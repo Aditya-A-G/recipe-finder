@@ -10,7 +10,6 @@ const Search = ({ setSearchedQuery }: SearchProps) => {
   const [value, setValue] = useState<string>("");
 
   const onFormSubmit = (e:React.FormEvent) => {
-    // e.preventDefault();
     setSearchedQuery(value);
   };
 

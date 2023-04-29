@@ -17,9 +17,9 @@ const RecipeList = ({recipes, searchedQuery}: RecipeListProps) => {
         textAlign='center'
       />
       <Grid columns={4} doubling stretched>
-        {recipes && recipes.map((recipe: Recipe) => {
+        {recipes && recipes.map((recipe: Recipe, index: number) => {
           return (
-            <Grid.Column>
+            <Grid.Column key={recipe.recipe_id}>
               <RecipeListItem recipe={recipe} />
             </Grid.Column>
           )
